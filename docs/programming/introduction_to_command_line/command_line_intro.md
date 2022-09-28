@@ -8,7 +8,7 @@ it’s very important to get familiar with how the terminal works.
 Although there are different types of terminals, all of them have an interface (called “shell”) translating
 the text you type into meaningful commands that the computer can understand.
 
-Today we’ll focus on the most commonly used shell, BASH
+Today we’ll focus on the most commonly used shell, [BASH](https://www.gnu.org/software/bash/)
 (developed in 1989!), which is the default one for most Linux and
 MacOS systems. It can also work on Windows, but you have to
 manually install it.
@@ -19,8 +19,7 @@ Here’s some reasons:
 * It’s faster than using a GUI (Graphic User Interface)
 * You can combine the usage of multiple programs in a
 single line of code
-* Most bioinformatics tools are made for command-line
-users
+* Most bioinformatics tools are made for command-line users
 * It can handle big files (i.e. several MB or GB), like a
 FASTA or FASTQ file (Word or Notepad would crash if
 you try opening a big file)
@@ -43,20 +42,20 @@ In most of the cases, you’ll only use a handful of them in your day-to-day wor
 Most commands follow this simple general syntax:
 
 If you’re unsure about a specific command’s
-syntax, you can type man or help followed
+syntax, you can type `man` or `help` followed
 by the command.
 E.g.:
 (use the arrows on your keyboard to scroll up and down the
 manual; then press q to exit when you’re done)
 Alternatively, you run one of the following:
 
-# Moving between folders and checking their content: pwd, ls, cd (1)
-Let’s start by opening a terminal: where am I? Use the pwd (=print working directory) command:
+# Moving between folders and checking their content: `pwd`, `ls`, `cd` (1)
+Let’s start by opening a terminal: where am I? Use the `pwd` (=print working directory) command:
 (If you run a command, this is where it will be executed)
 
-What’s inside the working directory I’m currently in? Use the ls command (ls * to check the content of
+What’s inside the working directory I’m currently in? Use the `ls` command (`ls *` to check the content of
 all subfolders):
-The command ls -l can be used to check the difference between files and folders:
+The command `ls -l` can be used to check the difference between files and folders:
 (the “d” at the
 beginning of the
 left-most column tells
@@ -64,20 +63,20 @@ you that’s a directory,
 whereas files don’t
 have that flag)
 
-# Moving between folders and checking their content: pwd, ls, cd (2)
-The ls command can be used to check the content of other folders without changing your current directory:
-How can I change directory (for example “Desktop”)? Use the cd command:
-And if I want to return to my home folder? Use the cd ~ command (or cd .. if it’s the parent directory):
-Messy screen? Use the clear command to clear the screen:
+# Moving between folders and checking their content: `pwd`, `ls`, `cd` (2)
+The `ls` command can be used to check the content of other folders without changing your current directory:
+How can I change directory (for example “Desktop”)? Use the `cd` command:
+And if I want to return to my home folder? Use the `cd ~` command (or `cd ..` if it’s the parent directory):
+Messy screen? Use the clear command to `clear` the screen:
 (the commands you’ve done so far are not gone, you’ll find them by
 just scrolling up, but the terminal is nicely cleaner now).
 
-# Creating and copying files and folders: mkdir, touch, cp
-How to create a new folder? Use the mkdir command
-How to create a new file? In several ways; one of them is the touch command
-What if I want to make a copy of a file? Use the cp command:
-However, if you want to copy a folder, using cp alone will return an error. You need to add the -r option,
-which will copy the content of that folder recursively (if unsure, have a look at man cp):
+# Creating and copying files and folders: `mkdir`, `touch`, `cp`
+How to create a new folder? Use the `mkdir` command
+How to create a new file? In several ways; one of them is the `touch` command
+What if I want to make a copy of a file? Use the `cp` command:
+However, if you want to copy a folder, using `cp` alone will return an error. You need to add the `-r` option,
+which will copy the content of that folder recursively (if unsure, have a look at `man cp`):
 
 # Some important facts about file names...
 It is worth remembering that:
