@@ -13,6 +13,7 @@ Content on this site is publicly available under the terms of the [MIT license](
 |    Module                |                      Tutorial                          |
 | ------------------------ | ------------------------------------------------------ |
 | Getting started          | [Setting up your environment](prerequisites/README.md) |
+| Programming              | [Introduction to the Command Line](programming/introduction_to_command_line/README.md)
 | Programming              | [Introduction to programming in R](programming/introduction_to_R/README.md) |
 | Programming              | [Investigating gene annotation files](programming/programming_with_gene_annotations/README.md) |
 
@@ -25,6 +26,7 @@ We are grateful to the following people who have contributed to the material on 
 * Azim Ansari
 * Gavin Band
 * Stefania Benonisdottir
+* John Broxholme
 * Daniel Crouch
 * Teresa Ferreira
 * Jason Hendry
@@ -32,8 +34,10 @@ We are grateful to the following people who have contributed to the material on 
 * Luke Jostins
 * Augustine Kong
 * Gerton Lunter
+* Duncan Parkes
 * Andre Python
 * Nilufer Rahmioglu
+* Silvia Salatino
 * Edward Sanders
 * Ron Schwessinger
 * Justin Whalley
