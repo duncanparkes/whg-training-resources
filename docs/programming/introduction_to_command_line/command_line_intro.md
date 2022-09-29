@@ -80,9 +80,9 @@ DESCRIPTION
 manual; then press q to exit when you’re done)
 Alternatively, you run one of the following:
 
-`command --help`
+`$ command --help`
 
-`command -h`
+`$ command -h`
 
 # Moving between folders and checking their content: `pwd`, `ls`, `cd` (1)
 Let’s start by opening a terminal: where am I? Use the `pwd` (=print working directory) command:
