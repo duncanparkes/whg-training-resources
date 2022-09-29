@@ -84,9 +84,14 @@ Alternatively, you run one of the following:
 
 `$ command -h`
 
-# Moving between folders and checking their content: `pwd`, `ls`, `cd` (1)
+# Moving between folders and checking their content: `pwd`, `ls`, `cd`
 Let’s start by opening a terminal: where am I? Use the `pwd` (=print working directory) command:
 (If you run a command, this is where it will be executed)
+
+~~~~
+$ pwd
+/home/duncan
+~~~~
 
 What’s inside the working directory I’m currently in? Use the `ls` command (`ls *` to check the content of
 all subfolders):
@@ -98,7 +103,6 @@ you that’s a directory,
 whereas files don’t
 have that flag)
 
-# Moving between folders and checking their content: `pwd`, `ls`, `cd` (2)
 The `ls` command can be used to check the content of other folders without changing your current directory:
 How can I change directory (for example “Desktop”)? Use the `cd` command:
 And if I want to return to my home folder? Use the `cd ~` command (or `cd ..` if it’s the parent directory):
