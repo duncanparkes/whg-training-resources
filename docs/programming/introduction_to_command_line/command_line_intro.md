@@ -43,8 +43,11 @@ Most commands follow this simple general syntax:
 
 If you’re unsure about a specific command’s
 syntax, you can type `man` or `help` followed
-by the command.
-E.g.: `man ls`
+by the command. For example, 
+
+`man ls`
+
+produces the following output.
 
 ~~~~
 LS(1)                            User Commands                           LS(1)
