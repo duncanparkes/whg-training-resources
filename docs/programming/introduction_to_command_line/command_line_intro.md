@@ -5,7 +5,7 @@ interacting with the computer using only the keyboard.
 Many of the programs and tools used in bioinformatics are designed to work only from command-line, so
 it’s very important to get familiar with how the terminal works.
 
-Although there are different types of terminals, all of them have an interface (called “shell”) translating
+Although there are different types of terminals, all of them have an interface (called “**shell**”) translating
 the text you type into meaningful commands that the computer can understand.
 
 Today we’ll focus on the most commonly used shell, [BASH](https://www.gnu.org/software/bash/)
@@ -45,6 +45,34 @@ If you’re unsure about a specific command’s
 syntax, you can type `man` or `help` followed
 by the command.
 E.g.:
+
+~~~~
+LS(1)                            User Commands                           LS(1)
+
+NAME
+       ls - list directory contents
+
+SYNOPSIS
+       ls [OPTION]... [FILE]...
+
+DESCRIPTION
+       List  information  about  the FILEs (the current directory by default).
+       Sort entries alphabetically if none of -cftuvSUX nor --sort  is  speci‐
+       fied.
+
+       Mandatory  arguments  to  long  options are mandatory for short options
+       too.
+
+       -a, --all
+              do not ignore entries starting with .
+
+       -A, --almost-all
+              do not list implied . and ..
+
+       --author
+ Manual page ls(1) line 1 (press h for help or q to quit)
+~~~~
+
 (use the arrows on your keyboard to scroll up and down the
 manual; then press q to exit when you’re done)
 Alternatively, you run one of the following:
