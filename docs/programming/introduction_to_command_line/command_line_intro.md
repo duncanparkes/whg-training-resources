@@ -1,6 +1,6 @@
 # What is the command-line interface?
 
-The *command-line* interface (sometimes also called “*command prompt*” or “*terminal*”) is a way of
+The **command-line** interface (sometimes also called “**command prompt**” or “**terminal**”) is a way of
 interacting with the computer using only the keyboard.
 Many of the programs and tools used in bioinformatics are designed to work only from command-line, so
 it’s very important to get familiar with how the terminal works.
