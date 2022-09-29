@@ -45,7 +45,7 @@ If you’re unsure about a specific command’s
 syntax, you can type `man` or `help` followed
 by the command. For example, 
 
-`man ls`
+`$ man ls`
 
 produces the following output.
 
@@ -79,6 +79,10 @@ DESCRIPTION
 (use the arrows on your keyboard to scroll up and down the
 manual; then press q to exit when you’re done)
 Alternatively, you run one of the following:
+
+`command --help`
+
+`command -h`
 
 # Moving between folders and checking their content: `pwd`, `ls`, `cd` (1)
 Let’s start by opening a terminal: where am I? Use the `pwd` (=print working directory) command:
