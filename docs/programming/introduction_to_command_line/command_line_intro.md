@@ -63,6 +63,15 @@ $ pwd
 /home/duncan
 ~~~~
 
+and what you've been up to recently with `history`
+
+~~~~
+$ history
+ 1 whoami
+ 2 hostname
+ 3 pwd
+~~~~
+
 # BASH commands – introduction
 BASH has hundreds of commands, but don’t panic!
 In most of the cases, you’ll only use a handful of them in your day-to-day work.
