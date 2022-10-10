@@ -217,6 +217,15 @@ Pipelines:
 Probably the most useful option for I/O redirection. It allows you to connect multiple commands by feeding
 the standard output of one command into the standard input of another command. Here's an example:
 
+If you want to send the output of a command to standard output, but keep a copy as a file as well, then there is a special command for that called `tee`: `tee` does exactly this - takes input on standard in, echoes it to standard out, but sends a copy to a file as well. You can imagine a letter T with the input coming in at the bottom and the output going to both the left and the right.
+
+~~~~
+$ echo hello | tee hello.txt
+hello
+$ cat hello.txt
+hello
+~~~~
+
 # Some filters: sort, uniq, cut, grep, tr, awk, sed
 Certain commands – often combined in pipelines – are used to take standard input, perform some
 operation on it, and then send the result to the standard output:
