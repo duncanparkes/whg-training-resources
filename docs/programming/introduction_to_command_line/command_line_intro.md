@@ -70,6 +70,7 @@ $ history
  1 whoami
  2 hostname
  3 pwd
+ 4 history
 ~~~~
 
 # BASH commands – introduction
