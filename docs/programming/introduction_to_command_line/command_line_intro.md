@@ -108,7 +108,7 @@ DESCRIPTION
 manual; then press q to exit when you’re done)
 Alternatively, you run one of the following:
 
-`$ command --help`
+<pre>$ *command* --help</pre>
 
 `$ command -h`
 
