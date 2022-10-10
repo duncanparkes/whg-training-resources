@@ -35,7 +35,7 @@ misinterpreted by tools like Excel (i.e. genes that look
 like dates are automatically converted to dates by
 Excel, or comma/dot usage for decimal positions)
 
-# BASH - Where am I?
+# First Commands
 
 When you first open a terminal, you might want to find out a bit about where you are.
 
