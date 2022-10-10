@@ -176,3 +176,68 @@ bash files, executable binaries, web pages, compressed archives, etc.
 ● tail will show you the first 10 lines of a file (default, it can be customised)
 ● wc will tell you the number of lines, words and bites of a given file
 
+# I/O redirection and piping
+
+In computer programming, there are three standardised streams of
+communication: standard input (stdin), standard output (stdout), and
+standard error (stderr).
+Standard Output:
+Many commands (e.g. “ls”) write their output on the display. However, sometimes you might need instead to
+have this output written to a file, or device instead. There are some special notations to do this:
+● the “>” symbol writes the output of a command to a new file, so no results are shown on the screen. If
+the file doesn’t exist, it will be created; otherwise, it will be overwritten!
+● the “>>” symbol appends the output of a command to a new file; if the file does not exist, it will be
+created; otherwise, the output will be added to the end of the file (the echo command used here displays
+a line of text to the standard output):
+
+Standard Input:
+Several commands can accept their input from a file or another command:
+A command can have both its input and output redirected:
+Pipelines:
+Probably the most useful option for I/O redirection. It allows you to connect multiple commands by feeding
+the standard output of one command into the standard input of another command. Here's an example:
+
+# Some filters: sort, uniq, cut, grep, tr, awk, sed
+Certain commands – often combined in pipelines – are used to take standard input, perform some
+operation on it, and then send the result to the standard output:
+● sort sorts (numerically, alphabetically, or randomly) standard input and outputs the sorted result to
+the standard output; we already saw an example in the previous slide
+● uniq removes duplicate lines from standard input (remember to sort it first!)
+● cut lets you slice up lines based on particular criteria
+● grep extracts lines containing a pattern from the standard input
+* awk is a sophisticated programming language. One example thing you can do is filter lines based on the contents of a column. e.g. `awk '$3=="data"'`
+● tr translates characters into others (e.g. uppercase in lowercase)
+● sed can parse and transform text in a more sophisticated way than “tr”
+
+# Practical Session 2 – Exercises
+1) Create a new empty file named test.txt , check its default file permissions, and then change them
+such that every user can read and modify the file
+2) Using echo and redirection, write the following 5 strings, one per line into
+the file test.txt :
+5 oranges
+3 bananas
+2 apples
+4 pears
+1 pineapple
+3) Display the content of your file on the stdout
+4) Sort the file test.txt alphabetically (using the second column of fruit names) and, instead of having
+the output printed on the stdout, write it in a new file test_sorted.txt (you’ll need man sort)
+5) Use tail to get the last 3 lines of the file test.txt , append them to the file test_sorted.txt ,
+and then check how many lines are now in the file test_sorted.txt (there should be exactly 8 lines)
+6) Sort the file test_sorted.txt by reverse numerical order of its first column, then pipe the result to
+uniq to get only unique lines, and finally use grep to extract only lines containing the word apple
+
+# Practical Session 2 – Solutions
+1) touch test.txt , followed by ls -lh test.txt , followed by chmod a+rw test.txt
+2)
+echo "5 oranges" > test.txt
+echo "3 bananas" >> test.txt
+echo "2 apples" >> test.txt
+echo "4 pear" >> test.txt
+echo "1 pineapple" >> test.txt
+or in one line
+echo -e "5 oranges\n3 bananas\n2 apples\n4 pear\n1 pineapple" > test.txt
+3) cat test.txt or more test.txt
+4) sort -k 2 test.txt > test_sorted.txt
+5) tail -3 test.txt >> test_sorted.txt , followed by wc -l test_sorted.txt
+6) sort -k 1 -n -r test_sorted.txt | uniq | grep apple
