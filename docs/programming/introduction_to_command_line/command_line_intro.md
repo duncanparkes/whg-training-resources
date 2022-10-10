@@ -116,6 +116,7 @@ DESCRIPTION
 
 (use the arrows on your keyboard to scroll up and down the
 manual; then press q to exit when you’re done)
+
 Alternatively, you can try tying the command name followed by `--help`, for example
 
 `$ ls --help`
