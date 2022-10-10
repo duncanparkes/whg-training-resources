@@ -81,7 +81,7 @@ $ history
  4 history
 ~~~~
 
-# BASH commands – introduction
+# Help me!
 BASH has hundreds of commands, but don’t panic!
 In most of the cases, you’ll only use a handful of them in your day-to-day work.
 
