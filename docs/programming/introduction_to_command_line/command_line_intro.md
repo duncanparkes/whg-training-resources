@@ -63,6 +63,14 @@ $ pwd
 /home/duncan
 ~~~~
 
+what files are there in the directory you're in
+
+~~~~
+$ ls
+bash_intro1.md      bash_intro2.md         bash_intro.md
+bash_intro_2012.md  bash_introduction.doc  bash_intro.md.old
+~~~~
+
 and what you've been up to recently with `history`
 
 ~~~~
