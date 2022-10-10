@@ -163,3 +163,16 @@ Open a terminal
 4) mv folder_B/file_A.txt folder_B/file_A.txt
 5) ls folder_*
 
+# Viewing the content of a file: cat, less, more, file, head, tail, wc
+
+There are several ways to see the content of a file without having to use a text editor:
+● cat will print the whole file content on the screen
+● more shows you the content of the file one page at a time. Press the space bar to see the next page
+● less will let you scroll through your file using the arrows and the PageUp / PageDown buttons on
+your keyboard; to exit from this view mode, just type “q”
+● file can recognise most types of files without the need to open them, such as ASCII-text based files,
+bash files, executable binaries, web pages, compressed archives, etc.
+● head will show you the first 10 lines of a file (default, it can be customised)
+● tail will show you the first 10 lines of a file (default, it can be customised)
+● wc will tell you the number of lines, words and bites of a given file
+
