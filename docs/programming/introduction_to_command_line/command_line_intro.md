@@ -187,15 +187,15 @@ Open a terminal
 # Viewing the content of a file: cat, less, more, file, head, tail, wc
 
 There are several ways to see the content of a file without having to use a text editor:
-● cat will print the whole file content on the screen
-● more shows you the content of the file one page at a time. Press the space bar to see the next page
-● less will let you scroll through your file using the arrows and the PageUp / PageDown buttons on
+* cat will print the whole file content on the screen
+* more shows you the content of the file one page at a time. Press the space bar to see the next page
+* less will let you scroll through your file using the arrows and the PageUp / PageDown buttons on
 your keyboard; to exit from this view mode, just type “q”
-● file can recognise most types of files without the need to open them, such as ASCII-text based files,
+* file can recognise most types of files without the need to open them, such as ASCII-text based files,
 bash files, executable binaries, web pages, compressed archives, etc.
-● head will show you the first 10 lines of a file (default, it can be customised)
-● tail will show you the first 10 lines of a file (default, it can be customised)
-● wc will tell you the number of lines, words and bites of a given file
+* head will show you the first 10 lines of a file (default, it can be customised)
+* tail will show you the first 10 lines of a file (default, it can be customised)
+* wc will tell you the number of lines, words and bites of a given file
 
 # I/O redirection and piping
 
@@ -205,9 +205,9 @@ standard error (stderr).
 Standard Output:
 Many commands (e.g. “ls”) write their output on the display. However, sometimes you might need instead to
 have this output written to a file, or device instead. There are some special notations to do this:
-● the “>” symbol writes the output of a command to a new file, so no results are shown on the screen. If
+* the “>” symbol writes the output of a command to a new file, so no results are shown on the screen. If
 the file doesn’t exist, it will be created; otherwise, it will be overwritten!
-● the “>>” symbol appends the output of a command to a new file; if the file does not exist, it will be
+* the “>>” symbol appends the output of a command to a new file; if the file does not exist, it will be
 created; otherwise, the output will be added to the end of the file (the echo command used here displays
 a line of text to the standard output):
 
@@ -221,14 +221,15 @@ the standard output of one command into the standard input of another command. H
 # Some filters: sort, uniq, cut, grep, tr, awk, sed
 Certain commands – often combined in pipelines – are used to take standard input, perform some
 operation on it, and then send the result to the standard output:
-● sort sorts (numerically, alphabetically, or randomly) standard input and outputs the sorted result to
+
+* `sort` sorts (numerically, alphabetically, or randomly) standard input and outputs the sorted result to
 the standard output; we already saw an example in the previous slide
-● uniq removes duplicate lines from standard input (remember to sort it first!)
-● cut lets you slice up lines based on particular criteria
-● grep extracts lines containing a pattern from the standard input
-* awk is a sophisticated programming language. One example thing you can do is filter lines based on the contents of a column. e.g. `awk '$3=="data"'`
-● tr translates characters into others (e.g. uppercase in lowercase)
-● sed can parse and transform text in a more sophisticated way than “tr”
+* `uniq` removes duplicate lines from standard input (remember to sort it first!)
+* `cut` lets you slice up lines based on particular criteria
+* `grep` extracts lines containing a pattern from the standard input
+* `awk` is a sophisticated programming language. One example thing you can do is filter lines based on the contents of a column. e.g. `awk '$3=="data"'`
+* `tr` translates characters into others (e.g. uppercase in lowercase)
+* `sed` can parse and transform text in a more sophisticated way than “tr”
 
 # Practical Session 2 – Exercises
 1) Create a new empty file named test.txt , check its default file permissions, and then change them
