@@ -145,3 +145,13 @@ To remove multiple files, for example all those ending with “.png”, you can 
 the wildcard “*” (e.g. “rm my_folder/*.png”). However, be careful with that: for
 example, the command “rm *” will delete everything in your current folder!
 
+# Practical Session
+
+Open a terminal
+
+1) Create a new directory named folder_A/
+2) Move into the folder you just created and create a new file named file_A.txt
+3) Go back to your home folder, make a copy of folder_A/ and call it folder_B/
+4) Rename the text file in folder_B/ as file_B.txt
+5) Check the content of both folders
+
