@@ -112,14 +112,7 @@ Alternatively, you run one of the following:
 
 `$ command -h`
 
-# Moving between folders and checking their content: `pwd`, `ls`, `cd`
-Let’s start by opening a terminal: where am I? Use the `pwd` (=print working directory) command:
-(If you run a command, this is where it will be executed)
-
-~~~~
-$ pwd
-/home/duncan
-~~~~
+# Moving between folders and checking their content: `ls`, `cd`
 
 What’s inside the working directory I’m currently in? Use the `ls` command (`ls *` to check the content of
 all subfolders):
