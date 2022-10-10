@@ -184,18 +184,17 @@ Open a terminal
 4) mv folder_B/file_A.txt folder_B/file_A.txt
 5) ls folder_*
 
-# Viewing the content of a file: cat, less, more, file, head, tail, wc
+# Viewing the content of a file: `cat`, `less`, `more`, `file`, `head`, `tail`, `wc`
 
 There are several ways to see the content of a file without having to use a text editor:
-* cat will print the whole file content on the screen
-* more shows you the content of the file one page at a time. Press the space bar to see the next page
-* less will let you scroll through your file using the arrows and the PageUp / PageDown buttons on
-your keyboard; to exit from this view mode, just type “q”
-* file can recognise most types of files without the need to open them, such as ASCII-text based files,
+* `cat` will print the whole file content on the screen
+* `more` shows you the content of the file one page at a time. Press the space bar to see the next page
+`your keyboard; to exit from this view` mode, just type “q”
+* `file` can recognise most types of files without the need to open them, such as ASCII-text based files,
 bash files, executable binaries, web pages, compressed archives, etc.
-* head will show you the first 10 lines of a file (default, it can be customised)
-* tail will show you the first 10 lines of a file (default, it can be customised)
-* wc will tell you the number of lines, words and bites of a given file
+* `head` will show you the first 10 lines of a file (default, it can be customised)
+* `tail` will show you the first 10 lines of a file (default, it can be customised)
+* `wc` will tell you the number of lines, words and bites of a given file
 
 # I/O redirection and piping
 
@@ -243,14 +242,14 @@ the file test.txt :
 1 pineapple
 3) Display the content of your file on the stdout
 4) Sort the file test.txt alphabetically (using the second column of fruit names) and, instead of having
-the output printed on the stdout, write it in a new file test_sorted.txt (you’ll need man sort)
-5) Use tail to get the last 3 lines of the file test.txt , append them to the file test_sorted.txt ,
+the output printed on the stdout, write it in a new file test_sorted.txt (you’ll need `man sort`)
+5) Use `tail` to get the last 3 lines of the file test.txt , append them to the file test_sorted.txt ,
 and then check how many lines are now in the file test_sorted.txt (there should be exactly 8 lines)
 6) Sort the file test_sorted.txt by reverse numerical order of its first column, then pipe the result to
 uniq to get only unique lines, and finally use grep to extract only lines containing the word apple
 
 # Practical Session 2 – Solutions
-1) touch test.txt , followed by ls -lh test.txt , followed by chmod a+rw test.txt
+1) `touch test.txt`, followed by `ls -lh test.txt`, followed by `chmod a+rw test.txt`
 2)
 ~~~~
 echo "5 oranges" > test.txt
