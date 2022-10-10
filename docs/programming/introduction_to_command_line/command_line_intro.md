@@ -252,14 +252,19 @@ uniq to get only unique lines, and finally use grep to extract only lines contai
 # Practical Session 2 – Solutions
 1) touch test.txt , followed by ls -lh test.txt , followed by chmod a+rw test.txt
 2)
+~~~~
 echo "5 oranges" > test.txt
 echo "3 bananas" >> test.txt
 echo "2 apples" >> test.txt
 echo "4 pear" >> test.txt
 echo "1 pineapple" >> test.txt
+~~~~
+
 or in one line
-echo -e "5 oranges\n3 bananas\n2 apples\n4 pear\n1 pineapple" > test.txt
-3) cat test.txt or more test.txt
-4) sort -k 2 test.txt > test_sorted.txt
-5) tail -3 test.txt >> test_sorted.txt , followed by wc -l test_sorted.txt
-6) sort -k 1 -n -r test_sorted.txt | uniq | grep apple
+
+`echo -e "5 oranges\n3 bananas\n2 apples\n4 pear\n1 pineapple" > test.txt`
+
+3) `cat test.txt` or `more test.txt`
+4) `sort -k 2 test.txt > test_sorted.txt`
+5) `tail -3 test.txt >> test_sorted.txt` , followed by `wc -l test_sorted.txt`
+6) `sort -k 1 -n -r test_sorted.txt | uniq | grep apple`
