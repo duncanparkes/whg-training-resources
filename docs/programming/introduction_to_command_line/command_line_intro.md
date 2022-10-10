@@ -116,11 +116,13 @@ DESCRIPTION
 
 (use the arrows on your keyboard to scroll up and down the
 manual; then press q to exit when you’re done)
-Alternatively, you run one of the following:
+Alternatively, you can try tying the command name followed by `--help`, for example
 
-<pre>$ *command* --help</pre>
+`$ ls --help`
 
-`$ command -h`
+or 
+
+`$ ls -h`
 
 # Moving between folders and checking their content: `ls`, `cd`
 
