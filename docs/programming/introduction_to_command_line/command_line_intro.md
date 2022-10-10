@@ -35,6 +35,34 @@ misinterpreted by tools like Excel (i.e. genes that look
 like dates are automatically converted to dates by
 Excel, or comma/dot usage for decimal positions)
 
+# BASH - Where am I?
+
+When you first open a terminal, there are a few commands you can use to find out a bit about where you are.
+
+You can find out what your username is with `whoami`
+
+~~~~
+$ whoami
+
+duncan
+~~~~
+
+The hostname of the computer you're using with `hostname`
+
+~~~~
+$ hostname
+
+duncans-laptop
+~~~~
+
+The directory you're currently in with `pwd` (print working directory)
+
+~~~~
+$ pwd
+
+/home/duncan
+~~~~
+
 # BASH commands – introduction
 BASH has hundreds of commands, but don’t panic!
 In most of the cases, you’ll only use a handful of them in your day-to-day work.
