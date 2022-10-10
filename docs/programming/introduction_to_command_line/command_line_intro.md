@@ -125,6 +125,8 @@ or
 
 `$ ls -h`
 
+for short.
+
 # Moving between folders and checking their content: `ls`, `cd`
 
 What’s inside the working directory I’m currently in? Use the `ls` command (`ls *` to check the content of
