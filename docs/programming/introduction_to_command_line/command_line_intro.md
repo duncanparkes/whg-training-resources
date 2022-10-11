@@ -86,8 +86,6 @@ $ history
 BASH has hundreds of commands, but don’t panic!
 In most of the cases, you’ll only use a handful of them in your day-to-day work.
 
-Most commands follow this simple general syntax:
-
 If you’re unsure about a specific command’s
 syntax, you can type `man` followed by the command. For example, 
 
@@ -134,6 +132,14 @@ or
 `$ ls -h`
 
 for short.
+
+# Standard command syntax
+
+Most commands follow the same basic syntax as `ls`.
+
+`ls -lah my_folder`
+
+First comes the command name, in this case `ls`. This is followed by some options preceded by `-`. Here we have `-l`, `-a`, and `-h`, which can be combined together as `-lah`. Some options have longer names which you can use with `--`. For example, `-h` is short for `--human-readable`. Finally we get some positional arguments, separated by spaces. In this case we have just the one positional argument, `my_folder`.
 
 # Moving between folders and checking their content: `ls`, `cd`
 
