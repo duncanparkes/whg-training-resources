@@ -157,7 +157,7 @@ We could have written the command above as
 
 Let's make a new folder and tidy away some of those files.
 
-`$ mkdir `
+`$ mkdir archive`
 
 (`mkdir` stands for "make directory")
 
@@ -174,8 +174,6 @@ $ cd archive
 $ pwd
 /home/duncan/archive
 ~~~~
-
-The directory `archive` is inside my home directory.
 
 You can also change to a directory by giving `cd` the whole "path".
 
