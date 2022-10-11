@@ -88,12 +88,11 @@ In most of the cases, you’ll only use a handful of them in your day-to-day wor
 Most commands follow this simple general syntax:
 
 If you’re unsure about a specific command’s
-syntax, you can type `man` or `help` followed
-by the command. For example, 
+syntax, you can type `man` followed by the command. For example, 
 
 `$ man ls`
 
-produces the following output.
+produces the following output
 
 ~~~~
 LS(1)                            User Commands                           LS(1)
