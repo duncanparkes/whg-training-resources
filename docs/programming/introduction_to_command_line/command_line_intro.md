@@ -153,31 +153,17 @@ We could have written the command above as
 
 `ls -la -R --human-readable my_folder`
 
-# Moving between folders and checking their content: `ls`, `cd`
-
-What’s inside the working directory I’m currently in? Use the `ls` command (`ls *` to check the content of
-all subfolders):
-The command `ls -l` can be used to check the difference between files and folders:
-(the “d” at the
-beginning of the
-left-most column tells
-you that’s a directory,
-whereas files don’t
-have that flag)
-
-The `ls` command can be used to check the content of other folders without changing your current directory:
-How can I change directory (for example “Desktop”)? Use the `cd` command:
-And if I want to return to my home folder? Use the `cd ~` command (or `cd ..` if it’s the parent directory):
-Messy screen? Use the clear command to `clear` the screen:
-(the commands you’ve done so far are not gone, you’ll find them by
-just scrolling up, but the terminal is nicely cleaner now).
-
 # Creating and copying files and folders: `mkdir`, `touch`, `cp`
 How to create a new folder? Use the `mkdir` command
 How to create a new file? In several ways; one of them is the `touch` command
 What if I want to make a copy of a file? Use the `cp` command:
 However, if you want to copy a folder, using `cp` alone will return an error. You need to add the `-r` option,
 which will copy the content of that folder recursively (if unsure, have a look at `man cp`):
+
+# Moving between folders with `cd`
+
+How can I change directory (for example “Desktop”)? Use the `cd` command:
+And if I want to return to my home folder? Use the `cd ~` command (or `cd ..` if it’s the parent directory):
 
 # Some important facts about file names...
 It is worth remembering that:
