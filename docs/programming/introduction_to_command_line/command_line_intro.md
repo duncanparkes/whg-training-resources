@@ -153,8 +153,60 @@ We could have written the command above as
 
 `ls -la -R --human-readable my_folder`
 
-# Creating and copying files and folders: `mkdir`, `touch`, `cp`
-How to create a new folder? Use the `mkdir` command
+# Directories (also known as folders)
+
+Let's make a new folder and tidy away some of those files.
+
+`$ mkdir `
+
+(`mkdir` stands for "make directory")
+
+~~~~
+$ ls
+archive         bash_intro_2012.md  bash_introduction.doc  bash_intro.md.old
+bash_intro1.md  bash_intro2.md      bash_intro.md
+~~~~
+
+You'll notice that the new directory has been made in the current working directory. We can change our working directory with `cd` ("change directory").
+
+~~~~
+$ cd archive
+$ pwd
+/home/duncan/archive
+~~~~
+
+The directory `archive` is inside my home directory.
+
+You can also change to a directory by giving `cd` the whole "path".
+
+`$ cd /home/duncan/archive`
+
+If you want to get back to the directory above the one you're currently in, `..` refers to the parent of the current directory.
+
+~~~~
+$ pwd
+/home/duncan/archive
+$ cd ..
+$ pwd
+/home/duncan
+~~~~
+
+# Moving files
+
+It's time to hide away some of those old versions in the archive.
+
+~~~~
+$ mv bash_intro.md.old bash_introduction.doc archive/
+~~~~
+
+`mv` stands for "move", and allows you to move files from one place to another. In the form above it takes the files represented by all positional arguments except the last one and puts them in the directory which is its final argument.
+
+It can also be used to rename a file.
+
+`$ mv bash_intro_2012.md bash_intro_oldest.md`
+
+# Creating files
+
 How to create a new file? In several ways; one of them is the `touch` command
 What if I want to make a copy of a file? Use the `cp` command:
 However, if you want to copy a folder, using `cp` alone will return an error. You need to add the `-r` option,
