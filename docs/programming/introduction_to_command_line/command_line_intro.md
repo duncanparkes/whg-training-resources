@@ -137,21 +137,21 @@ for short.
 
 Most commands follow the same basic syntax as `ls`.
 
-`ls -lahd my_folder`
+`ls -lahR my_folder`
 
 This has three parts
 
 * the command name (`ls`)
-* some options (`-lahd`)
+* some options (`-lahR`)
 * and some positional arguments (`my_folder`).
 
-The options here are actually `-l`, `-a`, `-h`, and `-d`, but they can be combined together as `-lahd`. Some options have longer names starting with `--`, for example, `-h` is short for `--human-readable`. The longer names can't be combined in the same way.
+The options here are actually `-l`, `-a`, `-h`, and `-R`, but they can be combined together as `-lahR`. Some options have longer names starting with `--`, for example, `-h` is short for `--human-readable`. The longer names can't be combined in the same way.
 
 The positional arguments, if there are more than one, are separated by spaces.
 
 We could have written the command above as
 
-`ls -la -d --human-readable my_folder`
+`ls -la -R --human-readable my_folder`
 
 # Moving between folders and checking their content: `ls`, `cd`
 
