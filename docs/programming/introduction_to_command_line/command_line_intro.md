@@ -142,8 +142,8 @@ Most commands follow the same basic syntax as `ls`.
 This has three parts
 
 * the command name (`ls`)
-* some options (`-lahR`)
-* and some positional arguments (`my_folder`).
+* some options (`-lahR`), which change how the command behaves
+* and some positional arguments (`my_folder`), which are what the command operates on.
 
 The options here are actually `-l`, `-a`, `-h`, and `-R`, but they can be combined together as `-lahR`. Some options have longer names starting with `--`, for example, `-h` is short for `--human-readable`. The longer names can't be combined in the same way.
 
