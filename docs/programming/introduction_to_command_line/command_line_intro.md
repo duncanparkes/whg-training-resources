@@ -192,19 +192,19 @@ example, the command “rm *” will delete everything in your current folder!
 
 Open a terminal
 
-1) Create a new directory named folder_A/
-2) Move into the folder you just created and create a new file named file_A.txt
-3) Go back to your home folder, make a copy of folder_A/ and call it folder_B/
-4) Rename the text file in folder_B/ as file_B.txt
-5) Check the content of both folders
+1. Create a new directory named `folder_A`
+2. Move into the folder you just created and create a new file named `file_A.txt`
+3. Go back to your home folder, make a copy of `folder_A` and call it `folder_B`
+4. Rename the text file in `folder_B` as `file_B.txt`
+5. Check the content of both folders
 
 # Practical Session 1 – solutions
 
-1) mkdir folder_A/
-2) cd folder_A/ , followed by touch file_A.txt
-3) cd ~ , followed by cp r folder_A/ folder_B/
-4) mv folder_B/file_A.txt folder_B/file_A.txt
-5) ls folder_*
+1. `mkdir folder_A/`
+2. `cd folder_A/`, followed by `touch file_A.txt`
+3. `cd ~`, followed by `cp -r folder_A/ folder_B/`
+4. `mv folder_B/file_A.txt folder_B/file_A.txt`
+5. `ls folder_*`
 
 # Viewing the content of a file: `cat`, `less`, `more`, `file`, `head`, `tail`, `wc`
 
