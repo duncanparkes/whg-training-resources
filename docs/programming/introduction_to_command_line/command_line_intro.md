@@ -203,6 +203,10 @@ It can also be used to rename a file.
 
 `$ mv bash_intro_2012.md bash_intro_oldest.md`
 
+It even works on diretories
+
+`$ mv archive old`
+
 # Creating files
 
 How to create a new file? In several ways; one of them is the `touch` command
