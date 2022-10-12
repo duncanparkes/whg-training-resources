@@ -211,7 +211,7 @@ It can also be used to rename a file.
 
 `$ mv bash_intro_2012.md bash_intro_oldest.md`
 
-It even works on diretories
+It even works on directories
 
 `$ mv archive old`
 
