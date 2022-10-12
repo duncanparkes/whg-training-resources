@@ -291,7 +291,7 @@ Open a terminal
 4. `mv folder_B/file_A.txt folder_B/file_B.txt`
 5. `ls folder_*`
 
-# Viewing the content of a file: `cat`, `less`, `head`, `tail`, `wc`
+# Viewing the content of a file: `cat`, `less`, `head`, `tail`
 
 Obviously you can view the content of a file with an editor like `nano`, but then you're losing
 some of the advantages of being on the command line.
