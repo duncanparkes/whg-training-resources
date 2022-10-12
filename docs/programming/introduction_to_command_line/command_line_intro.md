@@ -331,6 +331,10 @@ If you want a word or line count of a file, `wc` will tell you the number of lin
 
 `$ wc notes.txt`
 
+Often we want to know just the number of lines
+
+`$ wc -l notes.txt`
+
 # I/O redirection and piping
 
 In computer programming, there are three standardised streams of
