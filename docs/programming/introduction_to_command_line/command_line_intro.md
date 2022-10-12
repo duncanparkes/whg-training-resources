@@ -215,6 +215,34 @@ It even works on diretories
 
 `$ mv archive old`
 
+# Removing files or folders: `rm`, `rmdir`
+
+To remove files you can use the `rm` command.
+
+`$ rm bash_intro2.md`
+
+If you want to remove a directory, you can use `rmdir`, but this only works if the directory is empty.
+
+~~~~
+$ rmdir old
+rmdir: failed to remove 'old': Directory not empty
+~~~~
+
+If you want to remove a folder and its contents, you can pass the `-r` argument to `rm`,
+which tells it to remove the directory "recursively".
+
+`$ rm -r old`
+
+IMPORTANT: when you delete
+something with `rm`, it’s gone (it
+doesn’t ask for confirmation)!
+TRICK: try first the same command
+but with `ls` instead of `rm`.
+
+To remove multiple files, for example all those ending with “.png”, you can use
+the wildcard `*`, for example, `rm my_folder/*.png`.
+But be careful: the command `rm *` will delete everything in your current folder.
+
 # Creating files
 
 How to create a new file? In several ways; one of them is the `touch` command
@@ -236,19 +264,6 @@ the characters you use to period (“.”), dash (“-”), and underscore (“_
 You will thank yourself later for this!
 * Please avoid using bash commands as filenames: although possible, this might mess up your
 commands!
-
-# Moving and removing files or folders: mv, rm
-The mv command can be used both to move and to rename files or folders:
-To remove files, instead, you should use the rm command. If you need to remove a folder and, therefore,
-its content, you should add the -r option (=”recursive”).
-IMPORTANT: when you delete
-something with “rm” it’s gone (it
-doesn’t ask for confirmation)!
-TRICK: try first the same command
-but with “ls” instead of “rm”.
-To remove multiple files, for example all those ending with “.png”, you can use
-the wildcard “*” (e.g. “rm my_folder/*.png”). However, be careful with that: for
-example, the command “rm *” will delete everything in your current folder!
 
 # Practical Session 1
 
