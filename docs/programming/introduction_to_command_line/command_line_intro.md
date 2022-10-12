@@ -337,7 +337,7 @@ Often we want to know just the number of lines
 
 # I/O redirection and piping
 
-In bash there are three standard streams of communication
+In programming there are three standard streams of communication
 
 * standard input (stdin)
 * standard output (stdout)
@@ -360,15 +360,29 @@ will send no output to the terminal, but instead creates a file `myfiles.txt`. B
 make a new file. If there was already a file with the name name it will be overwritten and the previous contents
 will be lost.
 
-If you use `>>`, then the output will be appended to the file rather than overwritting it.
+We say that the output has been "redirected" to the file.
+
+If you use `>>`, then the output will be appended to the file rather than overwriting it.
 
 ## Standard Input
 
-Many commands can accept input from stdin. A good example is `wc`. If y
+Many commands can accept input from stdin. A good example is `wc`: if it's not given a filename, `wc` will work on stdin instead. So for example, we can redirect a file to `wc`.
 
-Several commands can accept their input from a file or another command:
-A command can have both its input and output redirected:
-Pipelines:
+~~~~
+$ wc -l < myfiles.txt
+6
+~~~~
+
+A command can have both its input and output redirected
+
+~~~~
+$ wc -l < myfiles.txt > filecount.txt
+$ cat filecount.txt
+6
+~~~~
+
+## Pipelines
+
 Probably the most useful option for I/O redirection. It allows you to connect multiple commands by feeding
 the standard output of one command into the standard input of another command. Here's an example:
 
