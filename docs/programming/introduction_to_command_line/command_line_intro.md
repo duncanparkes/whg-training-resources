@@ -233,15 +233,17 @@ which tells it to remove the directory "recursively".
 
 `$ rm -r old`
 
-IMPORTANT: when you delete
-something with `rm`, it’s gone (it
-doesn’t ask for confirmation)!
-TRICK: try first the same command
-but with `ls` instead of `rm`.
-
 To remove multiple files, for example all those ending with “.png”, you can use
 the wildcard `*`, for example, `rm my_folder/*.png`.
 But be careful: the command `rm *` will delete everything in your current folder.
+
+IMPORTANT: when you delete
+something with `rm`, it’s gone (it
+doesn’t ask for confirmation)!
+
+TRICK: first try the same command
+but with `ls` instead of `rm` to check you have the right files.
+
 
 # Creating files
 
