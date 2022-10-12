@@ -291,17 +291,45 @@ Open a terminal
 4. `mv folder_B/file_A.txt folder_B/file_B.txt`
 5. `ls folder_*`
 
-# Viewing the content of a file: `cat`, `less`, `more`, `file`, `head`, `tail`, `wc`
+# Viewing the content of a file: `cat`, `less`, `head`, `tail`, `wc`
 
-There are several ways to see the content of a file without having to use a text editor:
-* `cat` will print the whole file content on the screen
-* `more` shows you the content of the file one page at a time. Press the space bar to see the next page
-`your keyboard; to exit from this view` mode, just type “q”
-* `file` can recognise most types of files without the need to open them, such as ASCII-text based files,
-bash files, executable binaries, web pages, compressed archives, etc.
-* `head` will show you the first 10 lines of a file (default, it can be customised)
-* `tail` will show you the first 10 lines of a file (default, it can be customised)
-* `wc` will tell you the number of lines, words and bites of a given file
+Obviously you can view the content of a file with an editor like `nano`, but then you're losing
+some of the advantages of being on the command line.
+
+The simplest way to see the contents of a file is with `cat`, which just prints the contents of the
+file to the screen and then returns you to the command prompt.
+
+`$ cat notes.txt`
+
+If the file you looked at was long, the start of it has probably disappeared off the top of the screen.
+If you just want to see the start of the file, you can use `head`
+
+`$ head notes.txt`
+
+Similarly, you can see the last few lines of the file with `tail`.
+
+`$ tail notes.txt`
+
+If the file you're interested in is still getting new stuff added to its end, you can use `tail -f`
+to follow new content at the end of the file.
+
+`$ tail -f log.txt`
+
+You'll neet to type CTRL-c to stop tailing the file.
+
+If you want to be able to move around inside a file you're looking at, a good choice would be to use `less`.
+
+`$ less notes.txt`
+
+You can then move around with the cursor keys and PageUp and PageDown. Press `q` to return to the command line.
+
+Why is it called `less`? It's an improved version of an earlier command called `more`, and less is more.
+
+# Getting information about a file
+
+If you want a word or line count of a file, `wc` will tell you the number of lines, words and characters
+
+`$ wc notes.txt`
 
 # I/O redirection and piping
 
