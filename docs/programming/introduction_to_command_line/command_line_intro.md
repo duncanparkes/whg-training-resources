@@ -424,8 +424,7 @@ Grep, Awk, and sed are all sophisticated tools, which would be well worth lookin
 
 # Practical Session 2 – Exercises
 
-1. Create a new empty file named test.txt , check its default file permissions, and then change them
-such that every user can read and modify the file
+1. Create a new empty file named test.txt
 2. Using echo and redirection, write the following 5 strings, one per line into
 the file test.txt :
 5 oranges
@@ -442,8 +441,8 @@ and then check how many lines are now in the file test_sorted.txt (there should 
 uniq to get only unique lines, and finally use grep to extract only lines containing the word apple
 
 # Practical Session 2 – Solutions
-1. `touch test.txt`, followed by `ls -lh test.txt`, followed by `chmod a+rw test.txt`
-2.
+1. `touch test.txt`
+2. 
 ~~~~
 echo "5 oranges" > test.txt
 echo "3 bananas" >> test.txt
