@@ -362,7 +362,7 @@ will be lost.
 
 We say that the output has been "redirected" to the file.
 
-If you use `>>`, then the output will be appended to the file rather than overwriting it.
+If you use `>>` instead, then the output will be appended to the file rather than overwriting it. This is useful for things like log files.
 
 ## Standard Input
 
@@ -383,8 +383,18 @@ $ cat filecount.txt
 
 ## Pipelines
 
-Probably the most useful option for I/O redirection. It allows you to connect multiple commands by feeding
-the standard output of one command into the standard input of another command. Here's an example:
+Using standard input and standard output is not just another way to read from files and write to files:
+you can also connect commands together in chains, sending stout from one command to stdin of another.
+We use the pipe symbol for this `|`.
+
+~~~~
+$ ls | wc -l
+6
+~~~~
+
+Here we list the files in the current directory, and pipe the output of this to `wc` to count the number of lines. (Notice that ls has realised it's in a pipeline and written the filenames one per line).
+
+This technique of piping one command to another is probably one of the most powerfull things in bash.
 
 What if you want to send your output to standard out and keep a copy in a file as well? You need `tee`: this takes input on standard in, echoes it to standard out, but sends a copy to a file as well. You can imagine a letter T with standard input coming from the left, standard output going to the right, and a copy being dropped in a file at the bottom.
 
