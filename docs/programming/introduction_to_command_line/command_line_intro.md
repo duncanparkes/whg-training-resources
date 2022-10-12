@@ -239,7 +239,7 @@ which tells it to remove the directory "recursively".
 
 To remove multiple files, for example all those ending with “.png”, you can use
 the wildcard `*`, for example, `rm my_folder/*.png`.
-But be careful: the command `rm *` will delete everything in your current folder.
+But be *CAREFUL*: the command `rm *` will delete everything in your current folder.
 
 IMPORTANT: when you delete
 something with `rm`, it’s gone (it
@@ -356,7 +356,7 @@ If you follow a command with `>` and the name of a file, then stdout will go the
 
 `$ ls > myfiles.txt`
 
-will send no output to the terminal, but instead creates a file `myfiles.txt`. Be careful, this will always
+will send no output to the terminal, but instead creates a file `myfiles.txt`. Be *CAREFUL*, this will always
 make a new file. If there was already a file with the name name it will be overwritten and the previous contents
 will be lost.
 
@@ -407,16 +407,20 @@ hello
 
 # Some filters: sort, uniq, cut, grep, tr, awk, sed
 Certain commands – often combined in pipelines – are used to take standard input, perform some
-operation on it, and then send the result to the standard output:
+operation on it, and then send the result to the standard output.
 
-* `sort` sorts (numerically, alphabetically, or randomly) standard input and outputs the sorted result to
-the standard output; we already saw an example in the previous slide
+* `sort` sorts its input alphabetically, numerically, or even randomly
 * `uniq` removes duplicate lines from standard input (remember to sort it first!)
-* `cut` lets you slice up lines based on particular criteria
-* `grep` extracts lines containing a pattern from the standard input
-* `awk` is a sophisticated programming language. One example thing you can do is filter lines based on the contents of a column. e.g. `awk '$3=="data"'`
+* `cut` lets you pick particular columns of the input to keep
 * `tr` translates characters into others (e.g. uppercase in lowercase)
-* `sed` can parse and transform text in a more sophisticated way than “tr”
+
+# Grep, Awk and Sed
+
+Grep, Awk, and sed are all sophisticated tools, which would be well worth looking into in detail. However there are a few recipies that you can use with each of them without needing to understand them deeply.
+
+* `grep` extracts lines containing a pattern
+* `awk` filter lines based on the contents of a column. e.g. `awk '$3=="data"'`
+* `sed` can parse and transform text in a more sophisticated way than `tr`
 
 # Practical Session 2 – Exercises
 
