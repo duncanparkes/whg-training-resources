@@ -13,18 +13,14 @@ Today we’ll focus on the most commonly used shell, [BASH](https://www.gnu.org/
 MacOS systems. It can also work on Windows, but you have to
 manually install it.
 
-# Why should we learn how to use the command line?
+# Why should we learn to use the command line?
 
 Here’s some reasons:
-* It’s faster than using a GUI (Graphic User Interface)
-* You can combine the usage of multiple programs in a
-single line of code
+* It’s usually faster than using a GUI (Graphic User Interface)
+* You can combine multiple programs, making the output of one the input of the next
 * Most bioinformatics tools are made for command-line users
-* It can handle big files (i.e. several MB or GB), like a
-FASTA or FASTQ file (Word or Notepad would crash if
-you try opening a big file)
-* Command line has lots of powerful commands for
-parsing (even very large) text files
+* It can handle efficiently handle big files that gui based tools might struggle to open
+* The command line has lots of powerful commands for parsing text files
 * High-performance computing: the cluster doesn’t
 have a GUI!
 * Some binary files (e.g. BAM or CRAM) can only be
