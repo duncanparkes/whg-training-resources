@@ -337,19 +337,35 @@ Often we want to know just the number of lines
 
 # I/O redirection and piping
 
-In computer programming, there are three standardised streams of
-communication: standard input (stdin), standard output (stdout), and
-standard error (stderr).
-Standard Output:
-Many commands (e.g. “ls”) write their output on the display. However, sometimes you might need instead to
-have this output written to a file, or device instead. There are some special notations to do this:
-* the “>” symbol writes the output of a command to a new file, so no results are shown on the screen. If
-the file doesn’t exist, it will be created; otherwise, it will be overwritten!
-* the “>>” symbol appends the output of a command to a new file; if the file does not exist, it will be
-created; otherwise, the output will be added to the end of the file (the echo command used here displays
-a line of text to the standard output):
+In bash there are three standard streams of communication
 
-Standard Input:
+* standard input (stdin)
+* standard output (stdout)
+* standard error (stderr)
+
+Stdin is what goes into a command, stdout is what comes out of it, and stderr is somewhere for the command to write messages about how things are going (such as error messages).
+
+## Standard Output
+
+By default, stdout from a command is sent to the terminal, and that's what you're seeing when you type `ls`, etc.
+
+However, sometimes you might need instead to
+have this output written to a file.
+
+If you follow a command with `>` and the name of a file, then stdout will go there instead, so
+
+`$ ls > myfiles.txt`
+
+will send no output to the terminal, but instead creates a file `myfiles.txt`. Be careful, this will always
+make a new file. If there was already a file with the name name it will be overwritten and the previous contents
+will be lost.
+
+If you use `>>`, then the output will be appended to the file rather than overwritting it.
+
+## Standard Input
+
+Many commands can accept input from stdin. A good example is `wc`. If y
+
 Several commands can accept their input from a file or another command:
 A command can have both its input and output redirected:
 Pipelines:
