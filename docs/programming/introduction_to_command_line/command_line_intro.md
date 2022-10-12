@@ -197,7 +197,7 @@ $ pwd
 /home/duncan
 ~~~~
 
-# Moving files
+# Moving and Copying Files
 
 It's time to hide away some of those old versions in the archive.
 
@@ -214,6 +214,10 @@ It can also be used to rename a file.
 It even works on directories
 
 `$ mv archive old`
+
+Copying files is similar to moving them, but uses the command `cp`.
+
+`$ cp bash_intro.md bash_intro_final.md`
 
 # Removing files or folders: `rm`, `rmdir`
 
@@ -243,14 +247,6 @@ doesn’t ask for confirmation)!
 
 TRICK: first try the same command
 but with `ls` instead of `rm` to check you have the right files.
-
-
-# Creating files
-
-How to create a new file? In several ways; one of them is the `touch` command
-What if I want to make a copy of a file? Use the `cp` command:
-However, if you want to copy a folder, using `cp` alone will return an error. You need to add the `-r` option,
-which will copy the content of that folder recursively (if unsure, have a look at `man cp`):
 
 # Some important facts about file names...
 It is worth remembering that:
