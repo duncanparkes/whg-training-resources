@@ -263,12 +263,20 @@ You will thank yourself later for this!
 * Please avoid using bash commands as filenames: although possible, this might mess up your
 commands!
 
+# Creating files
+
+A simple way to create an empty file is to use `touch`
+
+`$ touch new_file.txt`
+
+If you want to write a text file, there are lots of possible editors you can use. A good one to start off with is `nano`.
+
 # Practical Session 1
 
 Open a terminal
 
 1. Create a new directory named `folder_A`
-2. Move into the folder you just created and create a new file named `file_A.txt`
+2. Go into the folder you just created and create a new file named `file_A.txt`
 3. Go back to your home folder, make a copy of `folder_A` and call it `folder_B`
 4. Rename the text file in `folder_B` to `file_B.txt`
 5. Check the content of both folders
