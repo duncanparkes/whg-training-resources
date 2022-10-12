@@ -271,6 +271,8 @@ A simple way to create an empty file is to use `touch`
 
 If you want to write a text file, there are lots of possible editors you can use. A good one to start off with is `nano`.
 
+`$ nano notes.txt`
+
 # Practical Session 1
 
 Open a terminal
