@@ -274,7 +274,7 @@ Let's get a file to play with. You can download from a url using `wget`, or `cur
 
 or
 
-`$ curl https://www.well.ox.ac.uk/~duncan/sonnet.txt` -o sonnet.txt`
+`$ curl https://www.well.ox.ac.uk/~duncan/sonnet.txt -o sonnet.txt`
 
 # Viewing the content of a file: `cat`, `less`, `head`, `tail`
 
