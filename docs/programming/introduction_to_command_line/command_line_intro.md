@@ -63,6 +63,17 @@ what files are there in the directory you're in
 
 ~~~~
 $ ls
+$
+~~~~
+
+Nothing much at the moment! Let's make a few files so we have a more realistic home directory.
+
+`$ touch bash_intro1.md  bash_intro_2012.md  bash_intro2.md  bash_introduction.doc  bash_intro.md  bash_intro.md.old .very_secret`
+
+`touch` has just created empty files for any which did not previously exist.
+
+~~~~
+$ ls
 bash_intro1.md      bash_intro2.md         bash_intro.md
 bash_intro_2012.md  bash_introduction.doc  bash_intro.md.old
 ~~~~
@@ -75,7 +86,9 @@ $ history
  2 hostname
  3 pwd
  4 ls
- 5 history
+ 5 touch bash_intro1.md  bash_intro_2012.md  bash_intro2.md  bash_introduction.doc  bash_intro.md  bash_intro.md.old .very_secret
+ 6 ls
+ 7 history
 ~~~~
 
 # Help me!
