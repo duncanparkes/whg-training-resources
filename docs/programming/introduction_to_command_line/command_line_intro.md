@@ -514,38 +514,8 @@ Ringo	drums,percussion,vocals
 
 # Practical Session 2 – Exercises
 
-1. Create a new empty file named test.txt
-2. Using echo and redirection, write the following 5 strings, one per line into
-the file test.txt :
-5 oranges
-3 bananas
-2 apples
-4 pears
-1 pineapple
-3. Display the content of your file on the stdout
-4. Sort the file test.txt alphabetically (using the second column of fruit names) and, instead of having
-the output printed on the stdout, write it in a new file test_sorted.txt (you’ll need `man sort`)
-5. Use `tail` to get the last 3 lines of the file test.txt , append them to the file test_sorted.txt ,
-and then check how many lines are now in the file test_sorted.txt (there should be exactly 8 lines)
-6. Sort the file test_sorted.txt by reverse numerical order of its first column, then pipe the result to
-uniq to get only unique lines, and finally use grep to extract only lines containing the word apple
-
-# Practical Session 2 – Solutions
-1. `touch test.txt`
-2. 
-~~~~
-echo "5 oranges" > test.txt
-echo "3 bananas" >> test.txt
-echo "2 apples" >> test.txt
-echo "4 pear" >> test.txt
-echo "1 pineapple" >> test.txt
-~~~~
-
-or in one line
-
-`echo -e "5 oranges\n3 bananas\n2 apples\n4 pear\n1 pineapple" > test.txt`
-
-3. `cat test.txt` or `more test.txt`
-4. `sort -k 2 test.txt > test_sorted.txt`
-5. `tail -3 test.txt >> test_sorted.txt` , followed by `wc -l test_sorted.txt`
-6. `sort -k 1 -n -r test_sorted.txt | uniq | grep apple`
+1) Get the file https://www.well.ox.ac.uk/~duncan/dna.txt of simulated DNA strings (you can use `wget` or `curl`)
+2) How many lines contain the sequence CGAT (we call a string we're looking for in DNA a motif).
+3) What line numbers contain this sequence?
+4) Can you reverse complement the sequences line by line? (have a look at `man rev`)
+5) How many lines in the complement contain the motif CGAT?
