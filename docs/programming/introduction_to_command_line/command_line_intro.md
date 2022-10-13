@@ -438,7 +438,7 @@ guitars,vocals,sitar,keyboards,bass
 drums,percussion,vocals
 ~~~~
 
-By default, cut bases it's columns on tabs, but it can use anything you like. Let's get just the first instrument from that list by using cut again
+By default, cut bases its columns on tabs, but it can use anything you like. Let's get just the first instrument from that list by using cut again
 with the "delimiter" set to a comma
 
 ~~~~
