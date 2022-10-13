@@ -427,7 +427,6 @@ Paul	vocals,bass,guitars,keyboards,drums
 Ringo	drums,percussion,vocals
 ~~~~
 
-* `uniq` removes duplicate lines from standard input (remember to sort it first!)
 * `cut` lets you pick particular columns of the input to keep
 
 If we only want the instruments above, then we could use cut to pick out just the second column
@@ -446,6 +445,15 @@ with the "delimiter" set to a comma
 ~~~~
 $ cat beatles.txt | cut -f 2 | cut -d ',' -f 1
 vocals
+vocals
+guitars
+drums
+~~~~
+
+* `uniq` removes duplicate lines from standard input (remember to sort it first!)
+
+~~~~
+$ cat beatles.txt | cut -f 2 | cut -d ',' -f 1 | uniq
 vocals
 guitars
 drums
