@@ -333,6 +333,10 @@ If you want to be able to move around inside a file you're looking at, a good ch
 
 You can then move around with the cursor keys and PageUp and PageDown. Press `q` to return to the command line.
 
+This looks very similar to when you typed `man ls`, doesn't it? That's because `man` is using `less` to show
+you the manual page. Lots of command line tools use other tools to do part of their work.
+Being able to combine things like this is what makes the command line great.
+
 Why is it called `less`? It's an improved version of an earlier command called `more`, and less is more.
 
 # Getting information about a file
