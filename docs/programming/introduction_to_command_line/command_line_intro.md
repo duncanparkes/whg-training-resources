@@ -428,18 +428,18 @@ Ringo	drums,percussion,vocals
 
 * `cut` lets you pick particular columns of the input to keep
 
-If we only want the instruments above, then we could use cut to pick out just the second column
+If we only want the names above, then we could use cut to pick out just the first column.
 
 ~~~~
-$ cat beatles.txt | cut -f 2
-vocals,guitars,keyboards,harmonica,bass
-vocals,bass,guitars,keyboards,drums
-guitars,vocals,sitar,keyboards,bass
-drums,percussion,vocals
+$ cut -f 1 < beatles.txt 
+John
+Paul
+George
+Ringo
 ~~~~
 
 By default, cut bases its columns on tabs, but it can use anything you like. Let's get just the first instrument from that list by using cut again
-with the "delimiter" set to a comma
+with the "delimiter" set to a comma.
 
 ~~~~
 $ cat beatles.txt | cut -f 2 | cut -d ',' -f 1
