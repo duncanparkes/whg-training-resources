@@ -402,8 +402,7 @@ hello
 ~~~~
 
 # Some filters: sort, uniq, cut, tr
-Certain commands – often combined in pipelines – are used to take standard input, perform some
-operation on it, and then send the result to standard output.
+Bash contains lots of commands which can take standard input, transform it, and then send the result to standard output.
 
 Let's imagine we have the following file
 
