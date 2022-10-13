@@ -269,24 +269,6 @@ If you want to write a text file, there are lots of possible editors you can use
 
 `$ nano notes.txt`
 
-# Practical Session 1
-
-Open a terminal
-
-1. Create a new directory named `folder_A`
-2. Go into the folder you just created and create a new file named `file_A.txt`
-3. Go back to your home folder, make a copy of `folder_A` and call it `folder_B`
-4. Rename the text file in `folder_B` to `file_B.txt`
-5. Check the content of both folders
-
-# Practical Session 1 – solutions
-
-1. `mkdir folder_A/`
-2. `cd folder_A/`, followed by `touch file_A.txt`
-3. `cd ~`, followed by `cp -r folder_A/ folder_B/`
-4. `mv folder_B/file_A.txt folder_B/file_B.txt`
-5. `ls folder_*`
-
 # Viewing the content of a file: `cat`, `less`, `head`, `tail`
 
 Obviously you can view the content of a file with an editor like `nano`, but then you're losing
@@ -516,7 +498,7 @@ George	guitars,vocals,sitar,piano,bass
 Ringo	drums,percussion,vocals
 ~~~~
 
-# Practical Session 2 – Exercises
+# Exercises
 
 1) Get the file https://www.well.ox.ac.uk/~duncan/dna.txt of simulated DNA strings (you can use `wget` or `curl`)
 2) How many lines contain the sequence CGAT (we call a string we're looking for in DNA a motif).
