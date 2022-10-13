@@ -474,13 +474,43 @@ $ echo HELLO | tr [:upper:] [:lower:]
 hello
 ~~~~
 
+As you can see, you can do a lot by combining simple tools together with pipes.
+
 # Grep, Awk and Sed
 
-Grep, Awk, and sed are all sophisticated tools, which would be well worth looking into in detail. However there are a few recipies that you can use with each of them without needing to understand them deeply.
+Grep, Awk, and sed are all sophisticated tools in their own right, which would be well worth looking into in detail. However there are a few recipies that you can use with each of them without needing to understand them deeply.
 
 * `grep` extracts lines containing a pattern
-* `awk` filter lines based on the contents of a column. e.g. `awk '$3=="data"'`
+
+You could use it to see who in the Beatles plays  keyboards
+
+~~~~
+$ cat beatles.txt | grep keyboards
+John	vocals,guitars,keyboards,harmonica,bass
+Paul	vocals,bass,guitars,keyboards,drums
+George	guitars,vocals,sitar,keyboards,bass
+~~~~
+
+* `awk` filter lines based on the contents of a column
+
+Let's pick out just Paul using his name in column one
+
+~~~~
+$ cat beatles.txt | awk '$1=="Paul"'
+Paul	vocals,bass,guitars,keyboards,drums
+~~~~
+
 * `sed` can parse and transform text in a more sophisticated way than `tr`
+
+For example, it can be used to substitute some text with other text
+
+~~~~
+$ cat beatles.txt | sed 's/keyboards/piano/'
+John	vocals,guitars,piano,harmonica,bass
+Paul	vocals,bass,guitars,piano,drums
+George	guitars,vocals,sitar,piano,bass
+Ringo	drums,percussion,vocals
+~~~~
 
 # Practical Session 2 – Exercises
 
