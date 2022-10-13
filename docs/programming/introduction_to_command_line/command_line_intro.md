@@ -406,9 +406,35 @@ Certain commands – often combined in pipelines – are used to take standard i
 operation on it, and then send the result to the standard output.
 
 * `sort` sorts its input alphabetically, numerically, or even randomly
+
+~~~~
+$ cat beatles.txt 
+John
+Paul
+George
+Ringo
+$ sort < beatles.txt 
+George
+John
+Paul
+Ringo
+~~~~
+
 * `uniq` removes duplicate lines from standard input (remember to sort it first!)
 * `cut` lets you pick particular columns of the input to keep
-* `tr` translates characters into others (e.g. uppercase in lowercase)
+* `tr` translates characters into others
+
+~~~~
+$ echo veryinsecurepassword | tr osi 05!
+very!n5ecurepa55w0rd
+~~~~
+
+It can also be used to change the case of a string
+
+~~~~
+$ echo HELLO | tr [:upper:] [:lower:]
+hello
+~~~~
 
 # Grep, Awk and Sed
 
