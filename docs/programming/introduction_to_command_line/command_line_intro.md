@@ -497,8 +497,8 @@ Ringo	drums,percussion,vocals
 
 # Exercises
 
-1) Get the file https://www.well.ox.ac.uk/~duncan/dna.txt of simulated DNA strings (you can use `wget` or `curl`)
-2) How many lines contain the sequence CGAT (we call a string we're looking for in DNA a motif).
-3) What line numbers contain this sequence?
-4) Can you reverse complement the sequences line by line? (have a look at `man rev`)
-5) How many lines in the complement contain the motif CGAT?
+1. Get the file https://www.well.ox.ac.uk/~duncan/dna.txt of simulated DNA strings (you can use `wget` or `curl`)
+2. How many lines contain the sequence CGAT (we call a string we're looking for in DNA a motif).
+3. What line numbers contain this sequence?
+4. Can you reverse complement the sequences line by line? (have a look at `man rev`)
+5. How many lines in the complement contain the motif CGAT?
