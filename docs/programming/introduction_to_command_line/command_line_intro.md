@@ -19,7 +19,7 @@ Here’s some reasons:
 * It’s usually faster than using a GUI (Graphic User Interface)
 * You can combine multiple programs, making the output of one the input of the next
 * Most bioinformatics tools are made for command-line users
-* It can handle efficiently handle big files that gui based tools might struggle to open
+* It can efficiently handle big files that gui based tools might struggle to open
 * The command line has lots of powerful commands for parsing text files
 * High-performance computing: the cluster doesn’t
 have a GUI!
