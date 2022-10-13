@@ -403,7 +403,7 @@ hello
 
 # Some filters: sort, uniq, cut, tr
 Certain commands – often combined in pipelines – are used to take standard input, perform some
-operation on it, and then send the result to the standard output.
+operation on it, and then send the result to standard output.
 
 Let's imagine we have the following file
 
@@ -417,6 +417,8 @@ Ringo	drums,percussion,vocals
 
 * `sort` sorts its input alphabetically, numerically, or even randomly
 
+Let's sort the Beatles based on their first names (from column 1)
+
 ~~~~
 $ sort -k 1 < beatles.txt 
 George	guitars,vocals,sitar,keyboards,bass
@@ -428,7 +430,7 @@ Ringo	drums,percussion,vocals
 * `uniq` removes duplicate lines from standard input (remember to sort it first!)
 * `cut` lets you pick particular columns of the input to keep
 
-If we only want the names above, then we could use cut to pick out just the first column
+If we only want the instruments above, then we could use cut to pick out just the second column
 
 ~~~~
 $ cat beatles.txt | cut -f 2
@@ -436,6 +438,17 @@ vocals,guitars,keyboards,harmonica,bass
 vocals,bass,guitars,keyboards,drums
 guitars,vocals,sitar,keyboards,bass
 drums,percussion,vocals
+~~~~
+
+By default, cut bases it's columns on tabs, but it can use anything you like. Let's get just the first instrument from that list by using cut again
+with the "delimiter" set to a comma
+
+~~~~
+$ cat beatles.txt | cut -f 2 | cut -d ',' -f 1
+vocals
+vocals
+guitars
+drums
 ~~~~
 
 * `tr` translates characters into others
