@@ -407,7 +407,7 @@ Bash contains lots of commands which can take standard input, transform it, and 
 Let's imagine we have the following file
 
 ~~~~
-$ cat beatles.txt 
+$ cat beatles.tsv 
 John	vocals,guitars,keyboards,harmonica,bass
 Paul	vocals,bass,guitars,keyboards,drums
 George	guitars,vocals,sitar,keyboards,bass
@@ -416,14 +416,14 @@ Ringo	drums,percussion,vocals
 
 You can get a copy for yourself and play along:
 
-`wget https://www.well.ox.ac.uk/~duncan/beatles.txt`
+`wget https://www.well.ox.ac.uk/~duncan/beatles.tsv`
 
 * `sort` sorts its input alphabetically, numerically, or even randomly
 
 Let's sort the Beatles based on their first names (from column 1)
 
 ~~~~
-$ sort -k 1 < beatles.txt 
+$ sort -k 1 < beatles.tsv 
 George	guitars,vocals,sitar,keyboards,bass
 John	vocals,guitars,keyboards,harmonica,bass
 Paul	vocals,bass,guitars,keyboards,drums
@@ -435,7 +435,7 @@ Ringo	drums,percussion,vocals
 If we only want the names above, then we could use cut to pick out just the first column.
 
 ~~~~
-$ cut -f 1 < beatles.txt 
+$ cut -f 1 < beatles.tsv
 John
 Paul
 George
@@ -446,7 +446,7 @@ By default, cut bases its columns on tabs, but it can use anything you like. Let
 with the "delimiter" set to a comma.
 
 ~~~~
-$ cat beatles.txt | cut -f 2 | cut -d ',' -f 1
+$ cat beatles.tsv | cut -f 2 | cut -d ',' -f 1
 vocals
 vocals
 guitars
@@ -456,7 +456,7 @@ drums
 * `uniq` removes duplicate lines from standard input (remember to sort it first!)
 
 ~~~~
-$ cat beatles.txt | cut -f 2 | cut -d ',' -f 1 | uniq
+$ cat beatles.tsv | cut -f 2 | cut -d ',' -f 1 | uniq
 vocals
 guitars
 drums
@@ -489,7 +489,7 @@ Grep, Awk, and sed are all sophisticated tools in their own right, which would b
 You could use it to see who in the Beatles plays  keyboards
 
 ~~~~
-$ cat beatles.txt | grep keyboards
+$ cat beatles.tsv | grep keyboards
 John	vocals,guitars,keyboards,harmonica,bass
 Paul	vocals,bass,guitars,keyboards,drums
 George	guitars,vocals,sitar,keyboards,bass
@@ -500,7 +500,7 @@ George	guitars,vocals,sitar,keyboards,bass
 Let's pick out just Paul using his name in column one
 
 ~~~~
-$ cat beatles.txt | awk '$1=="Paul"'
+$ cat beatles.tsv | awk '$1=="Paul"'
 Paul	vocals,bass,guitars,keyboards,drums
 ~~~~
 
@@ -509,7 +509,7 @@ Paul	vocals,bass,guitars,keyboards,drums
 For example, it can be used to substitute some text with other text
 
 ~~~~
-$ cat beatles.txt | sed 's/keyboards/piano/'
+$ cat beatles.tsv | sed 's/keyboards/piano/'
 John	vocals,guitars,piano,harmonica,bass
 Paul	vocals,bass,guitars,piano,drums
 George	guitars,vocals,sitar,piano,bass
