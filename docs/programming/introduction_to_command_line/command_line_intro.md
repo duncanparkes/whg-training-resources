@@ -266,7 +266,7 @@ If you want to write a text file, there are lots of possible editors you can use
 
 `$ nano notes.txt`
 
-# Viewing the content of a file: `cat`, `less`, `head`, `tail`
+# Dowloading files
 
 Let's get a file to play with. You can download from a url using `wget`, or `curl`.
 
@@ -275,6 +275,8 @@ Let's get a file to play with. You can download from a url using `wget`, or `cur
 or
 
 `$ curl https://www.well.ox.ac.uk/~duncan/sonnet.txt` -o sonnet.txt`
+
+# Viewing the content of a file: `cat`, `less`, `head`, `tail`
 
 Obviously you can view the content of a file with an editor like `nano`, but then you're losing
 some of the advantages of being on the command line.
