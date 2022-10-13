@@ -401,7 +401,7 @@ $ cat hello.txt
 hello
 ~~~~
 
-# Some filters: sort, uniq, cut, grep, tr, awk, sed
+# Some filters: sort, uniq, cut, tr
 Certain commands – often combined in pipelines – are used to take standard input, perform some
 operation on it, and then send the result to the standard output.
 
@@ -413,6 +413,7 @@ John
 Paul
 George
 Ringo
+
 $ sort < beatles.txt 
 George
 John
@@ -423,6 +424,8 @@ Ringo
 * `uniq` removes duplicate lines from standard input (remember to sort it first!)
 * `cut` lets you pick particular columns of the input to keep
 * `tr` translates characters into others
+
+If you give it two equal length strings, it will swap characters in the first string in standard input for the corresponding characters from the second string.
 
 ~~~~
 $ echo veryinsecurepassword | tr osi 05!
