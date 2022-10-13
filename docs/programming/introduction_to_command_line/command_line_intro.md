@@ -268,22 +268,55 @@ If you want to write a text file, there are lots of possible editors you can use
 
 # Viewing the content of a file: `cat`, `less`, `head`, `tail`
 
+Let's get a file to play with. You can download from a url using `wget`, or `curl`.
+
+`$ wget https://www.well.ox.ac.uk/~duncan/sonnet.txt`
+
+or
+
+`$ curl https://www.well.ox.ac.uk/~duncan/sonnet.txt` -o sonnet.txt`
+
 Obviously you can view the content of a file with an editor like `nano`, but then you're losing
 some of the advantages of being on the command line.
 
 The simplest way to see the contents of a file is with `cat`, which just prints the contents of the
 file to the screen and then returns you to the command prompt.
 
-`$ cat notes.txt`
+~~~~
+$ cat sonnet.txt 
+Shall I compare thee to a summer's day?
+  Thou art more lovely and more temperate:
+  Rough winds do shake the darling buds of May,
+  And summer's lease hath all too short a date:
+  Sometime too hot the eye of heaven shines,
+  And often is his gold complexion dimm'd,
+  And every fair from fair sometime declines,
+  By chance, or nature's changing course untrimm'd:
+  But thy eternal summer shall not fade,
+  Nor lose possession of that fair thou ow'st,
+  Nor shall death brag thou wander'st in his shade,
+  When in eternal lines to time thou grow'st,
+    So long as men can breathe, or eyes can see,
+    So long lives this, and this gives life to thee.
+
+~~~~
 
 If the file you looked at was long, the start of it has probably disappeared off the top of the screen.
-If you just want to see the start of the file, you can use `head`
+If you just want to see the start of the file, you can use `head` (the `-3` below is how many lines to take).
 
-`$ head notes.txt`
+~~~~
+$ head -3 sonnet.txt 
+Shall I compare thee to a summer's day?
+  Thou art more lovely and more temperate:
+  Rough winds do shake the darling buds of May,
+~~~~
 
 Similarly, you can see the last few lines of the file with `tail`.
 
-`$ tail notes.txt`
+~~~~
+$ tail -1 sonnet.txt 
+    So long lives this, and this gives life to thee.
+~~~~
 
 If the file you're interested in is still getting new stuff added to its end, you can use `tail -f`
 to follow new content at the end of the file.
@@ -294,7 +327,7 @@ You'll neet to type CTRL-c to stop tailing the file.
 
 If you want to be able to move around inside a file you're looking at, a good choice would be to use `less`.
 
-`$ less notes.txt`
+`$ less sonnet.txt`
 
 You can then move around with the cursor keys and PageUp and PageDown. Press `q` to return to the command line.
 
