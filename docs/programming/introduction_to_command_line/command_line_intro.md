@@ -246,13 +246,10 @@ but with `ls` instead of `rm` to check you have the right files.
 
 # Some important facts about file names...
 It is worth remembering that:
-* File names in Linux are case sensitive. E.g., the names “File.txt” and “file.txt” refer to different files
+* File names in Linux are case sensitive: the names “File.txt” and “file.txt” refer to different files
 * File names beginning with a period (“.”) character are hidden, so if you type `ls` you won’t see them
 unless you also use the option `-a`. Some applications usually place their configuration/settings files in
 your home directory as hidden files.
-* In Linux there is no concept of a "file extension" as in Windows, for instance. This means you can
-name files as you like (e.g. “mickeymouse”). However, some programs might require input files to
-have specific extensions. Also, pay attention not to name a file like a command! (e.g. “man”)
 * Although Linux supports file names containing white spaces and punctuation characters, please limit
 the characters you use to period (“.”), dash (“-”), and underscore (“_”) and try to avoid using spaces.
 You will thank yourself later for this!
