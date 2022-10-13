@@ -414,6 +414,10 @@ George	guitars,vocals,sitar,keyboards,bass
 Ringo	drums,percussion,vocals
 ~~~~
 
+You can get a copy for yourself and play along:
+
+`wget https://www.well.ox.ac.uk/~duncan/beatles.txt`
+
 * `sort` sorts its input alphabetically, numerically, or even randomly
 
 Let's sort the Beatles based on their first names (from column 1)
