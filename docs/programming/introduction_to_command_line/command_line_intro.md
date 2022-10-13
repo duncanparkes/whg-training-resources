@@ -405,24 +405,39 @@ hello
 Certain commands – often combined in pipelines – are used to take standard input, perform some
 operation on it, and then send the result to the standard output.
 
-* `sort` sorts its input alphabetically, numerically, or even randomly
+Let's imagine we have the following file
 
 ~~~~
 $ cat beatles.txt 
-John
-Paul
-George
-Ringo
+John	vocals,guitars,keyboards,harmonica,bass
+Paul	vocals,bass,guitars,keyboards,drums
+George	guitars,vocals,sitar,keyboards,bass
+Ringo	drums,percussion,vocals
+~~~~
 
-$ sort < beatles.txt 
-George
-John
-Paul
-Ringo
+* `sort` sorts its input alphabetically, numerically, or even randomly
+
+~~~~
+$ sort -k 1 < beatles.txt 
+George	guitars,vocals,sitar,keyboards,bass
+John	vocals,guitars,keyboards,harmonica,bass
+Paul	vocals,bass,guitars,keyboards,drums
+Ringo	drums,percussion,vocals
 ~~~~
 
 * `uniq` removes duplicate lines from standard input (remember to sort it first!)
 * `cut` lets you pick particular columns of the input to keep
+
+If we only want the names above, then we could use cut to pick out just the first column
+
+~~~~
+$ cat beatles.txt | cut -f 2
+vocals,guitars,keyboards,harmonica,bass
+vocals,bass,guitars,keyboards,drums
+guitars,vocals,sitar,keyboards,bass
+drums,percussion,vocals
+~~~~
+
 * `tr` translates characters into others
 
 If you give it two equal length strings, it will swap characters in the first string in standard input for the corresponding characters from the second string.
