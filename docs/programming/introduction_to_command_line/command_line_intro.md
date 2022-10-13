@@ -359,7 +359,7 @@ $ cat filecount.txt
 ## Pipelines
 
 Using standard input and standard output is not just another way to read from files and write to files:
-you can also connect commands together in chains, sending stout from one command to stdin of another.
+you can also connect commands together in chains, sending stdout from one command to stdin of another.
 We use the pipe symbol for this `|`.
 
 ~~~~
